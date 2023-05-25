@@ -1,0 +1,192 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5%;
+}
+
+.card-option-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.payment-form {
+    width: 75%;
+    margin: 30px;
+    background: rgb(224, 224, 224);
+    border: 1px darkgray solid;
+    border-radius: 12px;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.form-header{
+  display: flex;
+  background: lightgrey;
+  height: 100px;
+  align-items: center;
+  border: 1px darkgray solid;
+  border-radius: 10px 10px 0 0;
+}
+
+.form-header h1 {
+    margin: 0 20px 0 20px;
+    font-weight: 600;
+    align-items: center;
+}
+
+.error {
+    height: 65px;
+    background: rgb(243, 218, 218);
+    margin: 10px 30px 10px 30px;
+    border: 1px rgb(255, 197, 197) solid;
+    border-radius: 4px;
+}
+
+.error p {
+    align-items: center;
+    font-size: larger;
+    margin: 18px 0px 0px 10px;
+    color: darkred;
+    font-weight: 500;
+}
+
+.card-input .card-info form fieldset {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card-input .card-info form fieldset .form-control {
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+.card-input .card-info form fieldset label {
+    display: block;
+}
+
+.card-info, .form-body {
+    margin: 0 20px 0 20px;
+}
+
+.card-number,
+.cvc,
+.amount {
+    flex: 1 0 20%;
+    margin-right: 10px;
+    box-sizing: border-box;
+}
+
+.form-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+
+.body-left, 
+.body-right {
+    width: 48%; 
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form-group {
+    flex: 1;
+    margin-right: 0.5em;
+}
+
+.form-group:last-child {
+    margin-right: 0;
+}
+
+.form-check {
+    text-align: center;
+}
+
+.form-check-label i {
+   filter: invert(1);
+   font-size: x-large;
+}
+
+.form-control {
+  margin: 15px;
+}
+
+.footer-btn {
+  background: lightgrey;
+  overflow: hidden;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  border: 1px darkgray solid;
+  border-radius: 0 0 10px 10px;
+}
+
+.form-label, label {
+  font-weight: 600;
+  margin-left: 15px;
+}
+
+legend {
+    font-size: large;
+    margin: 25px 15px 25px 15px;
+}
+
+.row {
+    margin-left: 5px;
+}
+
+.card-opt {
+    display: inline-flex;
+    flex-direction: row;
+    flex: 1;
+    justify-content: space-around;
+    margin-left: 15px;
+    width: auto;
+    align-items: center;
+    background: grey;
+    min-height: 60px;
+    border-radius: 8px;
+}
+
+.select-container {
+    position: relative;
+    display: flex;
+}
+
+.form-control {
+    padding-right: 30px;
+}
+
+.arrow-icon {
+    position: absolute;
+    right: 25px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+}
+
+.notes {
+    margin: 18px;
+}
+
+.btn-1 {
+    color: darkgray;
+    margin-right: 15px;
+}
+
+.btn-2 {
+    margin-right: 15px;
+}
